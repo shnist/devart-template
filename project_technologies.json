@@ -1,16 +1,22 @@
 {
     "technologies": {
         "apis": [
-            "insert apis"
+            "Google Maps"
         ],
         "platforms": [
-            "insert platforms"
+            "Android"
         ],
         "toolkits": [
-            "insert toolkits"
+            "Node.js",
+            "Phonegap",
+            "Three.js",
+            "Mongodb",
+            "Websockets"
         ]
     },
     "themes": [
-        "insert themes"
+        "3D",
+        "Graffiti",
+        "Augmented Reality"
     ]
 }

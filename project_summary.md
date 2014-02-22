@@ -1,17 +1,15 @@
-# Project Title
-Insert the name of your project
+# 3DG|raffiti
 
 ## Authors
-- Insert main author name, surname, github account
-- Insert other author(s) name, surname, github account (one per list element)
+- Aaron Faber, [Shnist on Github](https://github.com/shnist)
+- Bruce Thomas, [Fliptopbox on Github](https://github.com/fliptopbox)
 
 ## Description
-Insert a description containing about 100 to 150 words, including your motivation and the meaning behind your idea and execution. The Judges will be keen to know how your idea pushes the boundaries of code and technology. 
+
+A three dimensional drawing environment that uses websockets, Google Maps and Android devices to describe paths in 3D space. The drawing sessions can be closed or shared (ie. multi-person), and the results can be experienced via a WebGL spacial simulation. I am divided between 3G|Draw and 3DG|raffitti -- looking at it 3DG|raffiti wins :D
 
 ## Link to Prototype
-NOTE: If your project lives online you can add one or more links here. Make sure you have a stable version of your project running before linking it.
-
-[Example Link](http://www.google.com "Example Link")
+Coming soon...
 
 ## Example Code
 NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
@@ -21,7 +19,6 @@ function test() {
 }
 ```
 ## Links to External Libraries
- NOTE: You can also use this space to link to external libraries or Github repositories you used on your project.
 
 [Example Link](http://www.google.com "Example Link")
 
