@@ -2,7 +2,7 @@ define([
 	'underscore',
 	'backbone',
 	'text!templates/app.html'
-], 	function (_, Backbone, template) {
+],	function (_, Backbone, template) {
 
 	var AppView = Backbone.View.extend({
 		el: '.container',
