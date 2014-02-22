@@ -1,8 +1,8 @@
 # And so our adventure begins...
 
-## What similar stuff is out there?
-
 Last night Aaron and I had a meeting about our project. We determined 3 user journeys, and identified which ones we would concentrate on to begin with. (I have some scribbles to upload soon).
+
+## What similar stuff is out there?
 
 Today I did a quick scan around the net to see how feasible this project would be given the extremely tight deadline. Here are some of the fantastic things people are already doing. Our biggest obstacle ironically will not be technical savvy, it will be public presentation, so that it has greater appeal than geek-2-geek :D
 
