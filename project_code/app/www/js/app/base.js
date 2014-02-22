@@ -1,3 +1,5 @@
+/*global define*/
+
 define([
     'underscore',
     'backbone'
@@ -8,6 +10,7 @@ define([
 
     Base.View = Backbone.View.extend({});
 
+    //handle closing views
     Base.View.prototype.close = function(){
         this.remove();
         this.unbind();

@@ -2,8 +2,9 @@ define([
 	'underscore',
 	'backbone',
 	'app/base',
-	'text!templates/app.html'
-],	function (_, Base, Backbone, template) {
+	'text!templates/app.html',
+	'app/draw'
+],	function (_, Backbone, Base, template, DrawView) {
 
 	var AppView = Base.View.extend({
 		el: '.container',
@@ -24,19 +25,31 @@ define([
 		// Bind any events that are required on startup. Common events are:
 		// 'load', 'deviceready', 'offline', and 'online'.
 		bindEvents: function() {
-			document.addEventListener('deviceready', this.onDeviceReady, false);
+			// are we running in native app or in a browser
+			window.isphone = false;
+			if (document.URL.indexOf("http://") === -1 && document.URL.indexOf("https://") === -1) {
+				window.isphone = true;
+			}
+
+			if (window.isphone) {
+				document.addEventListener('deviceready', this.onDeviceReady, false);
+			} else {
+				this.onDeviceReady();
+			}
 		},
 		// deviceready Event Handler
 		//
 		// The scope of 'this' is the event. In order to call the 'receivedEvent'
 		// function, we must explicity call 'app.receivedEvent(...);'
 		onDeviceReady: function() {
-			this.receivedEvent('deviceready');
+			this.createSubView(DrawView);
 		},
-		// Update DOM on a Received Event
-		receivedEvent: function(id) {
-			console.log('Received Event: ' + id);
-			alert('Its alive!');
+		createSubView: function (View) {
+			this.addSubView({
+				SubView : View,
+                parentView : this,
+                $el: this.$el
+			});
 		}
 	});
 
