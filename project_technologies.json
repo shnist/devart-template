@@ -11,7 +11,8 @@
             "Cordova",
             "Three.js",
             "Mongodb",
-            "Websockets"
+            "Websockets",
+            "Less"
         ]
     },
     "themes": [
