@@ -8,7 +8,7 @@
         ],
         "toolkits": [
             "Node.js",
-            "Phonegap",
+            "Cordova",
             "Three.js",
             "Mongodb",
             "Websockets"
