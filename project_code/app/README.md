@@ -9,6 +9,7 @@ Installation guide for the application can be found here.
 * Grunt-cli
 * Node / npm
 * Python
+* Cordova `npm install cordova -g`
 
 ### Local dependencies
 

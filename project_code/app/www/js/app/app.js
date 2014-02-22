@@ -1,10 +1,11 @@
 define([
 	'underscore',
 	'backbone',
+	'app/base',
 	'text!templates/app.html'
-],	function (_, Backbone, template) {
+],	function (_, Base, Backbone, template) {
 
-	var AppView = Backbone.View.extend({
+	var AppView = Base.View.extend({
 		el: '.container',
 		tagName: 'section',
 		id: '#application',
