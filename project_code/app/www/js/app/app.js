@@ -1,11 +1,25 @@
-define(function () {
-	var app = {
-		// Application Constructor
+define([
+	'underscore',
+	'backbone',
+	'text!templates/app.html'
+], 	function (_, Backbone, template) {
+
+	var AppView = Backbone.View.extend({
+		el: '.container',
+		tagName: 'section',
+		id: '#application',
+		template: _.template(template),
+		events: {},
+
 		initialize: function() {
 			this.bindEvents();
+			this.render();
 		},
-		// Bind Event Listeners
-		//
+		render: function () {
+			this.$el.html(this.template());
+
+			return this;
+		},
 		// Bind any events that are required on startup. Common events are:
 		// 'load', 'deviceready', 'offline', and 'online'.
 		bindEvents: function() {
@@ -16,13 +30,13 @@ define(function () {
 		// The scope of 'this' is the event. In order to call the 'receivedEvent'
 		// function, we must explicity call 'app.receivedEvent(...);'
 		onDeviceReady: function() {
-			app.receivedEvent('deviceready');
+			this.receivedEvent('deviceready');
 		},
 		// Update DOM on a Received Event
 		receivedEvent: function(id) {
 			console.log('Received Event: ' + id);
 		}
-	};
+	});
 
-	return app;
+	return AppView;
 });

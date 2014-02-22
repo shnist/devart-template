@@ -19,14 +19,30 @@
 
 requirejs.config({
 	baseUrl: 'js',
+	shim: {
+        'backbone': {
+            deps: ['underscore', 'jquery'],
+            exports: 'Backbone'
+        },
+        'underscore': {
+            exports: '_'
+        },
+        'jquery': {
+        	exports: '$'
+        }
+    },
 	paths: {
 		app: 'app',
-		lib: 'lib'
+		lib: 'libs',
+		backbone: 'libs/backbone',
+		underscore: 'libs/lodash',
+		jquery: 'libs/zepto',
+		text: 'libs/require_text'
 	}
 });
 
 // Start the main app logic.
 requirejs(['app/app'],
-function (app) {
-	app.initialize();
+function (App) {
+	var app = new App();
 });
