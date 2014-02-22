@@ -1,13 +1,13 @@
 define([
 	'underscore',
 	'backbone',
-	'app/base'
-],	function (_, Base, Backbone) {
+	'app/base',
+	'text!templates/draw.html'
+],	function (_, Backbone, Base) {
 
 	var DrawView = Base.View.extend({
-		tagName: 'button',
-		className: 'btn',
-		id: 'btn-draw',
+		tagName: 'div',
+		template: _.template(template),
 		events: {
 			'touchstart': 'handleTap',
 			'click': 'handleTap'
@@ -17,6 +17,8 @@ define([
 			this.render();
 		},
 		render: function () {
+			this.$el.html(this.template());
+
 			return this;
 		},
 		handleTap: function () {
