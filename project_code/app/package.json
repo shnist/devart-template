@@ -1,0 +1,24 @@
+{
+  "name": "3dgraffiti",
+  "version": "0.0.1",
+  "description": "Drawing in 3D space with your Android device",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shnist/devart-template.git"
+  },
+  "keywords": [
+    "3d",
+    "graffiti"
+  ],
+  "authors": [
+    "Aaron Faber",
+    "Bruce Thomas"
+  ],
+  "license": "BSD",
+  "devDependencies": {
+    "phonegap": "3.3.0-0.19.6",
+    "grunt": "0.4.2"
+  },
+  "dependencies": {}
+}
