@@ -15,7 +15,7 @@ define([
 
 		initialize: function() {
 			_.bindAll(this, 'stopAccelerometerWatch');
-			
+
 			this.acceleration = null;
 
 			this.render();
@@ -32,7 +32,7 @@ define([
 
 			this.acceleration = navigator.accelerometer.watchAcceleration(this.onSuccess, this.onError, options);
 
-			window.setTimeout(this.stopAccelerometerWatch, 5000);
+			window.setTimeout(this.stopAccelerometerWatch, 10000);
 		},
 		onSuccess: function (acceleration) {
 			this.$('#acceleration-x').html(acceleration.x);
@@ -46,6 +46,8 @@ define([
 		stopAccelerometerWatch: function () {
 			navigator.accelerometer.clearWatch(this.acceleration);
 			this.acceleration = null;
+
+			alert('Time is up!');
 		}
 	});
 

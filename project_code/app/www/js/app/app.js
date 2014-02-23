@@ -18,7 +18,7 @@ define([
 			this.render();
 		},
 		subscriptions: function () {
-			this.listenTo(pubsub, 'location:close', this.createDraw)
+			this.listenTo(pubsub, 'location:close', this.createDraw);
 		},
 		render: function () {
 			this.$el.html(this.template());

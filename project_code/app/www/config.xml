@@ -20,6 +20,7 @@
     <!-- Generic preferences for the build -->
     <preference name="phonegap-version" value="3.1.0" />
     <preference name="fullscreen" value="true" />
+    <preference name="orientation" value="portrait" />
 
     <!-- Android specific preferences -->
     <preference name="splash-screen-duration" value="2000" />
