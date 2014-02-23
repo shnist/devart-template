@@ -47,7 +47,6 @@ function (App) {
 	var app = null;
 
 	function onDeviceReady () {
-		console.log('device is ready');
 		app = new App();
 	}
 
