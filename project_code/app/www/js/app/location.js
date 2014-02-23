@@ -1,15 +1,17 @@
 define([
 	'underscore',
 	'backbone',
+	'pubsub',
 	'app/base',
 	'text!templates/location.html'
-],	function (_, Backbone, Base, template) {
+],	function (_, Backbone, pubsub, Base, template) {
 
 	var LocationView = Base.View.extend({
 		template: _.template(template),
 		className: 'location',
 		events: {
-			'touchstart #btn-location': 'getGeoLocation'
+			'touchstart #btn-location': 'getGeoLocation',
+			'touchstart #btn-close': 'close'
 		},
 
 		initialize: function() {
@@ -32,9 +34,14 @@ define([
 			this.$('#location-heading').html('Heading: ' + position.coords.heading);
 			this.$('#location-speed').html('Speed: ' + position.coords.speed);
 			this.$('#location-timestamp').html('Timestamp: ' + position.timestamp);
+
+			this.$('#btn-close').removeClass('hidden');
 		},
 		locationError: function (error) {
 			alert('Location error' + error);
+		},
+		onClose: function () {
+			pubsub.trigger('location:close');			
 		}
 	});
 

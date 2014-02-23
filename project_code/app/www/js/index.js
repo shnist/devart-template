@@ -37,7 +37,8 @@ requirejs.config({
 		backbone: 'libs/backbone',
 		underscore: 'libs/lodash',
 		jquery: 'libs/zepto',
-		text: 'libs/require_text'
+		text: 'libs/require_text',
+		pubsub: 'app/pubsub'
 	}
 });
 

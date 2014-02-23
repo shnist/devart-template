@@ -37,6 +37,7 @@
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/js/app/draw.js \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/js/app/location.js \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/js/app/app.js \
+/home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/js/app/pubsub.js \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/js/app/base.js \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/js/templates/draw.html \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/js/templates/app.html \

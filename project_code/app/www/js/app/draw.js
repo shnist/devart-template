@@ -1,9 +1,10 @@
 define([
 	'underscore',
 	'backbone',
+	'pubsub',
 	'app/base',
 	'text!templates/draw.html'
-],	function (_, Backbone, Base, template) {
+],	function (_, Backbone, pubsub, Base, template) {
 
 	var DrawView = Base.View.extend({
 		template: _.template(template),
@@ -13,6 +14,8 @@ define([
 		},
 
 		initialize: function() {
+			_.bindAll(this, 'stopAccelerometerWatch');
+
 			this.acceleration = null;
 
 			this.render();
@@ -29,7 +32,7 @@ define([
 
 			this.acceleration = navigator.accelerometer.watchAcceleration(this.onSuccess, this.onError, options);
 
-			window.setTimeout(this.stopAccelerometerWatch, 5000);
+			window.setTimeout(this.stopAccelerometerWatch, 10000);
 		},
 		onSuccess: function (acceleration) {
 			this.$('#acceleration-x').html(acceleration.x);
@@ -44,7 +47,7 @@ define([
 			navigator.accelerometer.clearWatch(this.acceleration);
 			this.acceleration = null;
 
-			alert(this.acceleration)
+			alert('Time is up!');
 		}
 	});
 
