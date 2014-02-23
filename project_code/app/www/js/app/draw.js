@@ -9,8 +9,7 @@ define([
 		template: _.template(template),
 		className: 'draw',
 		events: {
-			'touchstart': 'startAccelerometerWatch',
-			'touchend': 'stopAccelerometerWatch'
+			'touchstart #btn-draw': 'startAccelerometerWatch'
 		},
 
 		initialize: function() {
@@ -24,11 +23,15 @@ define([
 			return this;
 		},
 		startAccelerometerWatch: function () {
+			alert('Start watch');
+
 			var options = {
 				frequency: 500
 			};
 
 			this.acceleration = navigator.accelerometer.watchAcceleration(this.onSuccess, this.onError, options);
+
+			window.setTimeout(this.stopAccelerometerWatch, 5000);
 		},
 		onSuccess: function (acceleration) {
 			this.$('#acceleration-x').html(acceleration.x);
@@ -40,6 +43,8 @@ define([
 			console.log('Error!:' + error);
 		},
 		stopAccelerometerWatch: function () {
+			alert('Stop watch');
+
 			navigator.accelerometer.clearWatch(this.acceleration);
 			this.acceleration = null;
 		}

@@ -15,6 +15,7 @@
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/_where-is-www.txt \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/css \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/js \
+/home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/config.xml \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/index.html \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/img \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/cordova_plugins.js \
