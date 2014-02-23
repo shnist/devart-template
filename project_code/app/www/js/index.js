@@ -44,5 +44,22 @@ requirejs.config({
 // Start the main app logic.
 requirejs(['app/app'],
 function (App) {
-	var app = new App();
+	var app = null;
+
+	function onDeviceReady () {
+		console.log('device is ready');
+		app = new App();
+	}
+
+	// are we running in native app or in a browser
+	window.isphone = false;
+	if (document.URL.indexOf("http://") === -1 && document.URL.indexOf("https://") === -1) {
+		window.isphone = true;
+	}
+
+	if (window.isphone) {
+		document.addEventListener('deviceready', onDeviceReady, false);
+	} else {
+		app = new App();
+	}
 });

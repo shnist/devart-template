@@ -31,6 +31,10 @@ Builds the Android package
 
 Spins up an emulator instance for the App. You may need to create an [Android Virtual Device first](http://developer.android.com/tools/devices/index.html) first.
 
+## Remote debuggin
+If you want to remote debug on the emulator, open up your Chrome browser and in a new tab
+type `chrome://inspect`. It should come up under devices.
+
 ## Get the App started in the browser during development
 
 Simple run `grunt` =)
