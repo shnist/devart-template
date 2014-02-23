@@ -8,17 +8,16 @@ define([
 
 	var AppView = Base.View.extend({
 		el: '.container',
-		tagName: 'section',
-		id: '#application',
 		template: _.template(template),
 		events: {},
 
 		initialize: function() {
-			this.bindEvents();
 			this.render();
 		},
 		render: function () {
 			this.$el.html(this.template());
+
+			this.bindEvents();
 
 			return this;
 		},
@@ -37,18 +36,13 @@ define([
 				this.onDeviceReady();
 			}
 		},
-		// deviceready Event Handler
-		//
-		// The scope of 'this' is the event. In order to call the 'receivedEvent'
-		// function, we must explicity call 'app.receivedEvent(...);'
 		onDeviceReady: function() {
 			this.createSubView(DrawView);
 		},
 		createSubView: function (View) {
 			this.addSubView({
 				SubView : View,
-                parentView : this,
-                $el: this.$el
+                parentView : this
 			});
 		}
 	});

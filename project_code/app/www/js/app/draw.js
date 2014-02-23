@@ -3,11 +3,11 @@ define([
 	'backbone',
 	'app/base',
 	'text!templates/draw.html'
-],	function (_, Backbone, Base) {
+],	function (_, Backbone, Base, template) {
 
 	var DrawView = Base.View.extend({
-		tagName: 'div',
 		template: _.template(template),
+		className: 'draw',
 		events: {
 			'touchstart': 'handleTap',
 			'click': 'handleTap'
