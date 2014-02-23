@@ -20,6 +20,17 @@ These are handled by Grunt. To install them run `npm install`
 
 You'll need to [install the Android SDK](http://docs.phonegap.com/en/3.1.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide) to build the .apk file locally.
 
+It was a mission to get this to work on Linux... 
+
+Some useful Cordova commands:
+`cordova build`
+
+Builds the Android package
+
+`cordova emulate android`
+
+Spins up an emulator instance for the App. You may need to create an [Android Virtual Device first](http://developer.android.com/tools/devices/index.html) first.
+
 ## Get the App started in the browser during development
 
 Simple run `grunt` =)
