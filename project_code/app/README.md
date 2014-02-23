@@ -10,6 +10,7 @@ Installation guide for the application can be found here.
 * Node / npm
 * Python
 * Cordova `npm install cordova -g`
+* Java and Ant (for Android)
 
 ### Local dependencies
 
