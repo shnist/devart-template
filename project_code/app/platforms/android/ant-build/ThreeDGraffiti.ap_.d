@@ -20,6 +20,7 @@
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/cordova_plugins.js \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/cordova.js \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/less \
+/home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/plugins \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/res \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/icon.png \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/css/index.css \
@@ -39,6 +40,10 @@
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/js/templates/app.html \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/img/logo.png \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/less/index.less \
+/home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/plugins/org.apache.cordova.device-motion \
+/home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www \
+/home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/Acceleration.js \
+/home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/accelerometer.js \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/res/screen \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/res/icon \
 /home/aaron/sites/devart-template/project_code/app/platforms/android/assets/www/res/screen/android \

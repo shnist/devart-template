@@ -36,8 +36,8 @@ define([
 			this.$('#acceleration-z').html(acceleration.z);
 			this.$('#acceleration-timestamp').html(acceleration.timestamp);
 		},
-		onError: function () {
-			alert('Error!');
+		onError: function (error) {
+			console.log('Error!:' + error);
 		},
 		stopAccelerometerWatch: function () {
 			navigator.accelerometer.clearWatch(this.acceleration);

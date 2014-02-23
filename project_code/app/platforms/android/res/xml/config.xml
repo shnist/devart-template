@@ -4,9 +4,12 @@
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
     <name>ThreeDGraffiti</name>
     <description>
-        Drawing graffiti in 3D space with your device
+        Graffiti but without the nasty bit
     </description>
     <author email="aaron.jack.faber@gmail.com" href="https://github.com/shnist">
         Shnist and Fliptopbox
@@ -14,7 +17,7 @@
     <gap:platform name="android" />
     <preference name="phonegap-version" value="3.1.0" />
     <preference name="fullscreen" value="true" />
-    <feature name="http://api.phonegap.com/1.0/device" />
+    <preference name="splash-screen-duration" value="2000" />
     <icon src="icon.png" />
     <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />
@@ -26,7 +29,4 @@
     <gap:splash gap:density="xhdpi" gap:platform="android" src="res/screen/android/screen-xhdpi-portrait.png" />
     <access origin="*" />
     <content src="index.html" />
-    <feature name="Accelerometer">
-        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
-    </feature>
 </widget>
