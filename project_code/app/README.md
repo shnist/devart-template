@@ -6,7 +6,7 @@ Installation guide for the application can be found here.
 
 ### Global dependencies:
 
-* Grunt-cli
+* Grunt-cli `npm install grunt-cli -g`
 * Node / npm
 * Python
 * Cordova `npm install cordova -g`
