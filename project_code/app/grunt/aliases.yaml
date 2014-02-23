@@ -2,3 +2,4 @@ default:
   - 'jshint'
   - 'less'
   - 'connect'
+  - 'watch'
