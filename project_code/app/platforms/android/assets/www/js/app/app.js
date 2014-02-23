@@ -3,8 +3,9 @@ define([
 	'backbone',
 	'app/base',
 	'text!templates/app.html',
+	'app/location',
 	'app/draw'
-],	function (_, Backbone, Base, template, DrawView) {
+],	function (_, Backbone, Base, template, LocationView, DrawView) {
 
 	var AppView = Base.View.extend({
 		el: '.container',
@@ -17,7 +18,7 @@ define([
 		render: function () {
 			this.$el.html(this.template());
 
-			this.createSubView(DrawView);
+			this.createSubView(LocationView);
 
 			return this;
 		},
